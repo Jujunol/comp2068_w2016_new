@@ -1,16 +1,23 @@
 /// <reference path="typings/_reference.d.ts" />
 
 import express = require('express');
+import path = require('path');
 
 var app:express.Express = express();
 var port:number = process.env.port || 8080;
 
-app.get('/', function(req:express.Request, res:express.Response, next:any) {
-    res.send('Hello world!<br> - A message from express');
+app.set('views', './views');
+app.set('view engine', 'jade');
+
+app.use('/scripts/lib/', express.static(__dirname + '/scripts/lib'));
+
+app.get('/', function(req:express.Request, res:express.Response) {
+    res.render('index');
+    // res.sendfile(path.join(__dirname, "public", "index.html"));
 });
 
 app.get('/info', function(req:express.Request, res:express.Response) {
-    res.send('Your custom info page goes here');
+    res.sendFile(path.join(__dirname, "public", "info.html"));
 });
 
 app.listen(port, function() {
