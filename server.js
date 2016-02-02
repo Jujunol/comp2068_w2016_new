@@ -11,7 +11,8 @@ app.get('/', function (req, res) {
     // res.sendfile(path.join(__dirname, "public", "index.html"));
 });
 app.get('/info', function (req, res) {
-    res.sendFile(path.join(__dirname, "public", "info.html"));
+    // res.render()
+    res.sendfile(path.join(__dirname, "public", "info.html"));
 });
 app.listen(port, function () {
     console.log('App server started on port: ' + port);
