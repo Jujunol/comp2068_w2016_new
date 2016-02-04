@@ -14,6 +14,8 @@ app.use('/lib', express.static(__dirname + '/scripts'));
 
 app.get('/', function(req:express.Request, res:express.Response) {
     res.render('index', { "title": "COMP2068 Class " });
+}).get('/lab', function(req:express.Request, res:express.Response) {
+    res.render('lab', { "title": "COMP2068 Class " });
 });
 
 app.listen(port, function() {

@@ -9,6 +9,8 @@ app.use('/lib', express.static(__dirname + '/lib'));
 app.use('/lib', express.static(__dirname + '/scripts'));
 app.get('/', function (req, res) {
     res.render('index', { "title": "COMP2068 Class " });
+}).get('/lab', function (req, res) {
+    res.render('lab', { "title": "COMP2068 Class " });
 });
 app.listen(port, function () {
     console.log('App server started on port: ' + port);
