@@ -13,9 +13,7 @@ app.use('/scripts/lib/', express.static(__dirname + '/scripts/lib'));
 
 app.get('/', function(req:express.Request, res:express.Response) {
     res.render('index');
-});
-
-app.get('/info', function(req:express.Request, res:express.Response) {
+}).get('/info', function(req:express.Request, res:express.Response) {
     res.sendfile(path.join(__dirname, "public", "info.html"));
 });
 
