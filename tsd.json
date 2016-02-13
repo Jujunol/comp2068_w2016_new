@@ -9,7 +9,7 @@
       "commit": "86dbea8fc37d9473fee465da4f0a21bea4f8cbd9"
     },
     "node/node.d.ts": {
-      "commit": "86dbea8fc37d9473fee465da4f0a21bea4f8cbd9"
+      "commit": "44c9273e1e92bc95368f599d1dcda9f560a68956"
     },
     "serve-static/serve-static.d.ts": {
       "commit": "86dbea8fc37d9473fee465da4f0a21bea4f8cbd9"
@@ -19,6 +19,21 @@
     },
     "jade/jade.d.ts": {
       "commit": "86dbea8fc37d9473fee465da4f0a21bea4f8cbd9"
+    },
+    "gulp-util/gulp-util.d.ts": {
+      "commit": "44c9273e1e92bc95368f599d1dcda9f560a68956"
+    },
+    "vinyl/vinyl.d.ts": {
+      "commit": "44c9273e1e92bc95368f599d1dcda9f560a68956"
+    },
+    "chalk/chalk.d.ts": {
+      "commit": "44c9273e1e92bc95368f599d1dcda9f560a68956"
+    },
+    "through2/through2.d.ts": {
+      "commit": "44c9273e1e92bc95368f599d1dcda9f560a68956"
+    },
+    "gulp-nodemon/gulp-nodemon.d.ts": {
+      "commit": "44c9273e1e92bc95368f599d1dcda9f560a68956"
     }
   }
 }
